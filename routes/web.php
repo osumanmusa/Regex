@@ -16,15 +16,11 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('Welcome');
+});
+Route::get('/upload', function () {
+    return Inertia::render('Upload');
 });
 
-
-Route::get('/user/post-create', [PostController::class, 'create'])->name('user.post.create');
 
 

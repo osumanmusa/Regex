@@ -29,8 +29,7 @@ import { Head, Link } from '@inertiajs/vue3';
             </svg> Favourites
     </Link>
 
-    <Link 
-              
+    <Link href="/upload"
                 class="upload hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-200 hover:bg-gray-300 text-sm text-dark font-bold transition duration-200"
         >Upload
     </Link>
